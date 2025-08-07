@@ -1,0 +1,247 @@
+{
+  "categorias": [
+    {
+      "nombre": "Salud y Actividad Física",
+      "color": "#4ECDC4",
+      "preguntas": [
+        {
+          "pregunta": "¿Cuál es la frecuencia cardíaca máxima teórica para una persona de 30 años?",
+          "opciones": ["170 lpm", "180 lpm", "190 lpm", "200 lpm"],
+          "respuesta": "C"
+        },
+        {
+          "pregunta": "¿Qué porcentaje de la frecuencia cardíaca máxima se recomienda para el entrenamiento aeróbico moderado?",
+          "opciones": ["50-60%", "60-70%", "70-85%", "85-95%"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "¿Cuál es el principal sistema energético utilizado durante ejercicios de alta intensidad y corta duración (menos de 10 segundos)?",
+          "opciones": ["Sistema aeróbico", "Sistema anaeróbico láctico", "Sistema de fosfocreatina", "Glucólisis"],
+          "respuesta": "C"
+        },
+        {
+          "pregunta": "¿Qué adaptación fisiológica NO ocurre con el entrenamiento aeróbico regular?",
+          "opciones": ["Aumento del volumen sistólico", "Incremento de mitocondrias", "Reducción de la densidad capilar", "Mejora del VO2 máximo"],
+          "respuesta": "C"
+        },
+        {
+          "pregunta": "¿Cuál es la duración mínima recomendada por la OMS para la actividad física aeróbica de intensidad moderada por semana en adultos?",
+          "opciones": ["75 minutos", "100 minutos", "150 minutos", "200 minutos"],
+          "respuesta": "C"
+        },
+        {
+          "pregunta": "¿Qué tipo de contracción muscular se produce cuando el músculo se acorta mientras genera tensión?",
+          "opciones": ["Isométrica", "Concéntrica", "Excéntrica", "Isocinética"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "¿Cuál es el efecto principal del entrenamiento de fuerza en la composición corporal?",
+          "opciones": ["Aumento solo de masa grasa", "Reducción solo de masa muscular", "Aumento de masa muscular y reducción de masa grasa", "No tiene efectos significativos"],
+          "respuesta": "C"
+        },
+        {
+          "pregunta": "¿Qué factor de riesgo cardiovascular se reduce significativamente con el ejercicio regular?",
+          "opciones": ["Edad", "Genética", "Hipertensión arterial", "Sexo"],
+          "respuesta": "C"
+        },
+        {
+          "pregunta": "¿Cuál es el tiempo de recuperación recomendado entre sesiones de entrenamiento de fuerza para el mismo grupo muscular?",
+          "opciones": ["12 horas", "24 horas", "48-72 horas", "1 semana"],
+          "respuesta": "C"
+        },
+        {
+          "pregunta": "¿Qué hormona se libera durante el ejercicio y contribuye a la sensación de bienestar?",
+          "opciones": ["Cortisol", "Adrenalina", "Endorfinas", "Insulina"],
+          "respuesta": "C"
+        },
+        {
+          "pregunta": "¿Cuál es el principal beneficio del entrenamiento de flexibilidad en adultos mayores?",
+          "opciones": ["Aumento de la fuerza", "Mejora del equilibrio y prevención de caídas", "Incremento de la velocidad", "Reducción del peso corporal"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "¿Qué parámetro del entrenamiento se refiere al número de ejercicios realizados en una sesión?",
+          "opciones": ["Intensidad", "Volumen", "Frecuencia", "Densidad"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "¿Cuál es la principal causa de lesiones en la actividad física recreativa?",
+          "opciones": ["Calentamiento inadecuado", "Sobrecarga progresiva excesiva", "Falta de hidratación", "Uso de calzado inadecuado"],
+          "respuesta": "A"
+        },
+        {
+          "pregunta": "¿Qué tipo de fibra muscular es predominante en atletas de resistencia?",
+          "opciones": ["Tipo I (lentas)", "Tipo IIa (rápidas oxidativas)", "Tipo IIx (rápidas glucolíticas)", "Todas por igual"],
+          "respuesta": "A"
+        },
+        {
+          "pregunta": "¿Cuál es el rango de repeticiones más apropiado para el desarrollo de la fuerza máxima?",
+          "opciones": ["1-5 repeticiones", "6-12 repeticiones", "12-20 repeticiones", "Más de 20 repeticiones"],
+          "respuesta": "A"
+        }
+      ]
+    },
+    {
+      "nombre": "Reglas del Deporte",
+      "color": "#FF6B6B",
+      "preguntas": [
+        {
+          "pregunta": "En fútbol, ¿cuál es la duración del tiempo adicional mínimo que debe agregar el árbitro por una sustitución?",
+          "opciones": ["15 segundos", "30 segundos", "45 segundos", "1 minuto"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "¿Cuántos tiempos muertos por set puede solicitar cada equipo en voleibol profesional?",
+          "opciones": ["1", "2", "3", "4"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "En baloncesto, ¿cuál es el tiempo máximo permitido para realizar un tiro libre sin penalización?",
+          "opciones": ["5 segundos", "8 segundos", "10 segundos", "15 segundos"],
+          "respuesta": "C"
+        },
+        {
+          "pregunta": "¿Qué altura debe tener la red en tenis para hombres en los extremos?",
+          "opciones": ["0.91 metros", "1.07 metros", "1.15 metros", "1.22 metros"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "En atletismo, ¿cuántos intentos tiene un atleta en salto de altura en cada altura?",
+          "opciones": ["2", "3", "4", "6"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "¿Cuál es la distancia oficial entre las bases en béisbol profesional?",
+          "opciones": ["27.43 metros", "28.30 metros", "29.16 metros", "30.00 metros"],
+          "respuesta": "A"
+        },
+        {
+          "pregunta": "En natación estilo libre, ¿cuántas brazadas sin respirar se permiten después del viraje?",
+          "opciones": ["10 metros", "15 metros", "20 metros", "25 metros"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "¿Cuál es el peso oficial de una pelota de básquetbol según la FIBA?",
+          "opciones": ["580-620 gramos", "600-650 gramos", "650-700 gramos", "700-750 gramos"],
+          "respuesta": "A"
+        },
+        {
+          "pregunta": "En rugby, ¿cuántos puntos vale un try?",
+          "opciones": ["3 puntos", "4 puntos", "5 puntos", "6 puntos"],
+          "respuesta": "C"
+        },
+        {
+          "pregunta": "¿Cuál es la circunferencia oficial de una pelota de fútbol según FIFA?",
+          "opciones": ["65-67 cm", "68-70 cm", "68-71 cm", "70-73 cm"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "En tenis de mesa, ¿a qué altura debe estar la red?",
+          "opciones": ["15.25 cm", "15.50 cm", "15.75 cm", "16.00 cm"],
+          "respuesta": "A"
+        },
+        {
+          "pregunta": "¿Cuántos sets se requieren para ganar un partido de voleibol en competiciones internacionales?",
+          "opciones": ["2 de 3", "3 de 5", "4 de 7", "Depende del torneo"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "En atletismo, ¿cuál es la distancia de una vuelta completa en pista de atletismo estándar?",
+          "opciones": ["380 metros", "400 metros", "420 metros", "440 metros"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "¿Cuántos jugadores componen un equipo de hockey sobre césped en el campo?",
+          "opciones": ["9", "10", "11", "12"],
+          "respuesta": "C"
+        },
+        {
+          "pregunta": "En golf, ¿cuál es el número máximo de palos permitidos en una bolsa durante una ronda oficial?",
+          "opciones": ["12", "14", "16", "18"],
+          "respuesta": "B"
+        }
+      ]
+    },
+    {
+      "nombre": "Historia del Deporte",
+      "color": "#FFD700",
+      "preguntas": [
+        {
+          "pregunta": "¿En qué año se fundó el Comité Olímpico Internacional (COI)?",
+          "opciones": ["1892", "1894", "1896", "1900"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "¿Quién es considerado el fundador de los Juegos Olímpicos modernos?",
+          "opciones": ["Pierre de Coubertin", "Henri de Baillet-Latour", "Demetrio Vikelas", "Avery Brundage"],
+          "respuesta": "A"
+        },
+        {
+          "pregunta": "¿En qué año se realizaron los primeros Juegos Olímpicos de Invierno?",
+          "opciones": ["1920", "1924", "1928", "1932"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "¿Cuál fue el primer deporte en incluir mujeres en los Juegos Olímpicos modernos?",
+          "opciones": ["Atletismo", "Natación", "Tenis", "Golf"],
+          "respuesta": "C"
+        },
+        {
+          "pregunta": "¿En qué año se fundó la FIFA?",
+          "opciones": ["1902", "1904", "1906", "1908"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "¿Qué país organizó la primera Copa Mundial de Fútbol en 1930?",
+          "opciones": ["Argentina", "Brasil", "Uruguay", "Chile"],
+          "respuesta": "C"
+        },
+        {
+          "pregunta": "¿Cuándo se introdujo el profesionalismo en el tenis?",
+          "opciones": ["1958", "1968", "1972", "1978"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "¿En qué año se creó la NBA?",
+          "opciones": ["1946", "1949", "1952", "1955"],
+          "respuesta": "A"
+        },
+        {
+          "pregunta": "¿Cuál fue la primera universidad en establecer un programa de educación física en Estados Unidos?",
+          "opciones": ["Harvard", "Yale", "Amherst College", "Princeton"],
+          "respuesta": "C"
+        },
+        {
+          "pregunta": "¿En qué año se fundó el Comité Olímpico Argentino?",
+          "opciones": ["1921", "1923", "1925", "1927"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "¿Quién estableció el primer gimnasio moderno y el sistema de gimnasia sueca?",
+          "opciones": ["Friedrich Jahn", "Pehr Henrik Ling", "Johann Pestalozzi", "Adolf Spiess"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "¿En qué año se realizaron los primeros Juegos Panamericanos?",
+          "opciones": ["1947", "1951", "1955", "1959"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "¿Cuál fue el primer país latinoamericano en ganar una medalla olímpica?",
+          "opciones": ["Argentina", "Brasil", "Chile", "México"],
+          "respuesta": "C"
+        },
+        {
+          "pregunta": "¿En qué año se introdujo el doping control sistemático en los Juegos Olímpicos?",
+          "opciones": ["1960", "1968", "1972", "1976"],
+          "respuesta": "B"
+        },
+        {
+          "pregunta": "¿Quién fue el primer presidente de la FIFA?",
+          "opciones": ["Jules Rimet", "Robert Guérin", "Daniel Burley Woolfall", "Rodolphe Seeldrayers"],
+          "respuesta": "B"
+        }
+      ]
+    }
+  ]
+}

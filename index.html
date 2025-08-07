@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Deportiva - Estilo Jeopardy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pantalla inicial para nombres de equipos -->
+    <div id="initial-screen" class="screen active">
+        <div class="container">
+            <h1 class="title">🎮 CENTRO DE JUEGOS 🎮</h1>
+            <h1 class="title">🎓 UNPAZ 🎓</h1>
+            <p class="subtitle">Taller de Informatica - PUEF - Games</p>
+            
+            <div class="game-selection" id="game-selection">
+                <h2>Selecciona un juego:</h2>
+                <div class="game-buttons">
+                    <button class="game-btn selected" data-game="trivia-deportiva">
+                        <span class="game-emoji">🏆</span>
+                        <span class="game-name">Trivia Deportiva</span>
+                        <span class="game-desc">Demuestra tus conocimientos deportivos</span>
+                    </button>
+                    <button class="game-btn" data-game="ruleta-nutricional">
+                        <span class="game-emoji">🥗</span>
+                        <span class="game-name">Ruleta Nutricional</span>
+                        <span class="game-desc">Aprende sobre alimentación saludable</span>
+                    </button>
+                    <button class="game-btn" data-game="quiz-educacion-fisica">
+                        <span class="game-emoji">🏃‍♂️</span>
+                        <span class="game-name">Quiz de Educación Física</span>
+                        <span class="game-desc">Demuestra tus conocimientos en educación física</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="team-inputs" id="team-inputs" style="display: none;">
+                <div class="team-input">
+                    <label for="team1-name">Nombre del Equipo 1:</label>
+                    <input type="text" id="team1-name" placeholder="Ingresa el nombre del equipo 1" maxlength="20">
+                </div>
+                
+                <div class="team-input">
+                    <label for="team2-name">Nombre del Equipo 2:</label>
+                    <input type="text" id="team2-name" placeholder="Ingresa el nombre del equipo 2" maxlength="20">
+                </div>
+            </div>
+            
+            <button id="start-game" class="start-btn" style="display: none;">¡Comenzar Juego!</button>
+            <button id="continue-setup" class="start-btn" style="display: none;">Continuar</button>
+        </div>
+    </div>
+
+    <!-- Pantalla del juego -->
+    <div id="game-screen" class="screen">
+        <!-- Marcador -->
+        <div class="scoreboard">
+            <div class="score-item">
+                <span class="team-name" id="team1-display">Equipo 1</span>
+                <span class="score" id="team1-score">0</span>
+            </div>
+            <div class="turn-indicator">
+                <span id="current-turn">Turno de: Equipo 1</span>
+            </div>
+            <div class="game-controls">
+                <button id="end-game-btn" class="end-game-btn">Terminar Juego</button>
+            </div>
+            <div class="score-item">
+                <span class="team-name" id="team2-display">Equipo 2</span>
+                <span class="score" id="team2-score">0</span>
+            </div>
+        </div>
+
+        <!-- Tablero de juego -->
+        <div class="game-board">
+            <!-- Categoría 1: Deportes de Equipo -->
+            <div class="category">
+                <div class="category-header">DEPORTES DE EQUIPO</div>
+                <div class="question-cell" data-category="0" data-value="200">200</div>
+                <div class="question-cell" data-category="0" data-value="400">400</div>
+                <div class="question-cell" data-category="0" data-value="600">600</div>
+                <div class="question-cell" data-category="0" data-value="800">800</div>
+                <div class="question-cell" data-category="0" data-value="1000">1000</div>
+            </div>
+
+            <!-- Categoría 2: Deportes Individuales -->
+            <div class="category">
+                <div class="category-header">DEPORTES INDIVIDUALES</div>
+                <div class="question-cell" data-category="1" data-value="200">200</div>
+                <div class="question-cell" data-category="1" data-value="400">400</div>
+                <div class="question-cell" data-category="1" data-value="600">600</div>
+                <div class="question-cell" data-category="1" data-value="800">800</div>
+                <div class="question-cell" data-category="1" data-value="1000">1000</div>
+            </div>
+
+            <!-- Categoría 3: Juegos Olímpicos -->
+            <div class="category">
+                <div class="category-header">JUEGOS OLÍMPICOS</div>
+                <div class="question-cell" data-category="2" data-value="200">200</div>
+                <div class="question-cell" data-category="2" data-value="400">400</div>
+                <div class="question-cell" data-category="2" data-value="600">600</div>
+                <div class="question-cell" data-category="2" data-value="800">800</div>
+                <div class="question-cell" data-category="2" data-value="1000">1000</div>
+            </div>
+
+            <!-- Categoría 4: Equipamiento Deportivo -->
+            <div class="category">
+                <div class="category-header">EQUIPAMIENTO DEPORTIVO</div>
+                <div class="question-cell" data-category="3" data-value="200">200</div>
+                <div class="question-cell" data-category="3" data-value="400">400</div>
+                <div class="question-cell" data-category="3" data-value="600">600</div>
+                <div class="question-cell" data-category="3" data-value="800">800</div>
+                <div class="question-cell" data-category="3" data-value="1000">1000</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de pregunta -->
+    <div id="question-modal" class="modal">
+        <div class="modal-content">
+            <div class="question-header">
+                <span id="question-category">CATEGORÍA</span>
+                <span id="question-value">por 200 puntos</span>
+            </div>
+            <div class="question-text" id="question-text">
+                ¿Pregunta aquí?
+            </div>
+            <div class="answer-section">
+                <div class="answer-input-container">
+                    <label for="answer-input">Tu respuesta:</label>
+                    <input type="text" id="answer-input" placeholder="Escribe tu respuesta aquí..." maxlength="50">
+                    <button id="check-answer-btn" class="answer-btn check">Verificar</button>
+                </div>
+                <div class="manual-buttons">
+                    <p>O marca manualmente:</p>
+                    <button id="correct-btn" class="answer-btn correct">✓ Correcto</button>
+                    <button id="incorrect-btn" class="answer-btn incorrect">✗ Incorrecto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla de resultados -->
+    <div id="results-screen" class="screen">
+        <div class="container">
+            <h1 class="title">🎉 ¡JUEGO TERMINADO! 🎉</h1>
+            <div class="final-scores">
+                <div class="final-score">
+                    <span id="final-team1-name">Equipo 1</span>
+                    <span id="final-team1-score">0 puntos</span>
+                </div>
+                <div class="final-score">
+                    <span id="final-team2-name">Equipo 2</span>
+                    <span id="final-team2-score">0 puntos</span>
+                </div>
+            </div>
+            <div class="winner-announcement">
+                <h2 id="winner-text">¡Empate!</h2>
+            </div>
+            <button id="play-again" class="start-btn">Jugar de Nuevo</button>
+        </div>
+    </div>
+
+    <!-- Pantalla de la Ruleta Nutricional -->
+    <div id="roulette-screen" class="screen">
+        <!-- Marcador -->
+        <div class="scoreboard">
+            <div class="score-item">
+                <span class="team-name" id="roulette-team1-display">Jugador 1</span>
+                <span class="score" id="roulette-team1-score">0</span>
+            </div>
+            <div class="turn-indicator">
+                <span id="roulette-current-turn">Turno de: Jugador 1</span>
+                <div class="round-info">
+                    <span id="round-counter">Ronda 1/6</span>
+                </div>
+            </div>
+            <div class="score-item">
+                <span class="team-name" id="roulette-team2-display">Jugador 2</span>
+                <span class="score" id="roulette-team2-score">0</span>
+            </div>
+        </div>
+
+        <div class="game-controls">
+            <button id="end-roulette-btn" class="end-game-btn">Terminar Juego</button>
+        </div>
+
+        <!-- Contenedor principal de la ruleta con leyenda -->
+        <div class="roulette-main-container">
+            <!-- Leyenda de categorías -->
+            <div class="category-legend">
+                <h3>Categorías Nutricionales</h3>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #FF6B6B;"></div>
+                    <span>Grupos de alimentos</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #4ECDC4;"></div>
+                    <span>Vitaminas y Minerales</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #45B7D1;"></div>
+                    <span>Hidratación</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #96CEB4;"></div>
+                    <span>Macronutrientes</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #FECA57;"></div>
+                    <span>Etiquetas de alimentos</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #FF9FF3;"></div>
+                    <span>Porciones y frecuencia</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #F38BA8;"></div>
+                    <span>Mitos y verdades</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #A8E6CF;"></div>
+                    <span>Nutrición y deporte</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #FFB3BA;"></div>
+                    <span>Enfermedades y alimentación</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #FFAAA5;"></div>
+                    <span>Alimentos ultraprocesados</span>
+                </div>
+            </div>
+            
+            <!-- Ruleta -->
+            <div class="roulette-container">
+                <div class="roulette-wheel-container">
+                    <div class="roulette-wheel" id="roulette-wheel">
+                        <div class="roulette-segment" data-category="0" style="--rotation: 0deg; background-color: #FF6B6B;"></div>
+                        <div class="roulette-segment" data-category="1" style="--rotation: 36deg; background-color: #4ECDC4;"></div>
+                        <div class="roulette-segment" data-category="2" style="--rotation: 72deg; background-color: #45B7D1;"></div>
+                        <div class="roulette-segment" data-category="3" style="--rotation: 108deg; background-color: #96CEB4;"></div>
+                        <div class="roulette-segment" data-category="4" style="--rotation: 144deg; background-color: #FECA57;"></div>
+                        <div class="roulette-segment" data-category="5" style="--rotation: 180deg; background-color: #FF9FF3;"></div>
+                        <div class="roulette-segment" data-category="6" style="--rotation: 216deg; background-color: #F38BA8;"></div>
+                        <div class="roulette-segment" data-category="7" style="--rotation: 252deg; background-color: #A8E6CF;"></div>
+                        <div class="roulette-segment" data-category="8" style="--rotation: 288deg; background-color: #FFB3BA;"></div>
+                        <div class="roulette-segment" data-category="9" style="--rotation: 324deg; background-color: #FFAAA5;"></div>
+                    </div>
+                    <div class="roulette-pointer"></div>
+                </div>
+                <button id="spin-roulette-btn" class="spin-btn">🎯 Girar Ruleta</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla del Quiz de Educación Física -->
+    <div id="quiz-screen" class="screen">
+        <!-- Marcador -->
+        <div class="scoreboard">
+            <div class="score-item">
+                <span class="team-name" id="quiz-team1-display">Jugador 1</span>
+                <span class="score" id="quiz-team1-score">0</span>
+            </div>
+            <div class="turn-indicator">
+                <span id="quiz-current-turn">Turno de: Jugador 1</span>
+                <div class="round-info">
+                    <span id="quiz-round-counter">Pregunta 1/6</span>
+                </div>
+            </div>
+            <div class="score-item">
+                <span class="team-name" id="quiz-team2-display">Jugador 2</span>
+                <span class="score" id="quiz-team2-score">0</span>
+            </div>
+        </div>
+
+        <div class="game-controls">
+            <button id="end-quiz-btn" class="end-game-btn">Terminar Quiz</button>
+        </div>
+
+        <!-- Información de la categoría seleccionada -->
+        <div class="quiz-category-info">
+            <h2 id="quiz-selected-category">Categoría: Salud y Actividad Física</h2>
+            <p>Responde las preguntas de opción múltiple. Cada respuesta correcta vale 1 punto.</p>
+        </div>
+
+        <!-- Botón para siguiente pregunta -->
+        <div class="quiz-controls">
+            <button id="next-quiz-question-btn" class="start-btn">Siguiente Pregunta</button>
+        </div>
+    </div>
+
+    <!-- Modal de pregunta del Quiz -->
+    <div id="quiz-question-modal" class="modal">
+        <div class="modal-content">
+            <div class="question-header">
+                <span id="quiz-question-category">CATEGORÍA</span>
+                <span id="quiz-question-info">Pregunta 1/6</span>
+            </div>
+            <div class="question-text" id="quiz-question-text">
+                ¿Pregunta aquí?
+            </div>
+            <div class="quiz-options">
+                <button class="quiz-option" data-option="A" id="option-A">
+                    <span class="option-letter">A)</span>
+                    <span class="option-text">Opción A</span>
+                </button>
+                <button class="quiz-option" data-option="B" id="option-B">
+                    <span class="option-letter">B)</span>
+                    <span class="option-text">Opción B</span>
+                </button>
+                <button class="quiz-option" data-option="C" id="option-C">
+                    <span class="option-letter">C)</span>
+                    <span class="option-text">Opción C</span>
+                </button>
+                <button class="quiz-option" data-option="D" id="option-D">
+                    <span class="option-letter">D)</span>
+                    <span class="option-text">Opción D</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de pregunta nutricional -->
+    <div id="nutrition-question-modal" class="modal">
+        <div class="modal-content">
+            <div class="question-header">
+                <span id="nutrition-question-category">CATEGORÍA</span>
+                <span id="nutrition-round-info">Ronda 1/6</span>
+            </div>
+            <div class="question-text" id="nutrition-question-text">
+                ¿Pregunta aquí?
+            </div>
+            <div class="answer-section">
+                <div class="answer-input-container">
+                    <label for="nutrition-answer-input">Tu respuesta:</label>
+                    <input type="text" id="nutrition-answer-input" placeholder="Escribe tu respuesta aquí..." maxlength="50">
+                    <button id="nutrition-check-answer-btn" class="answer-btn check">Verificar</button>
+                </div>
+                <div class="manual-buttons">
+                    <p>O marca manualmente:</p>
+                    <div>
+                        <button id="nutrition-correct-btn" class="answer-btn correct">✓ Correcto</button>
+                        <button id="nutrition-incorrect-btn" class="answer-btn incorrect">✗ Incorrecto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+    <footer style="margin-top: 40px; padding: 20px; background-color: #00264d; color: white; text-align: center;">
+      &copy; 2025 Leandro Guerschberg. Todos los derechos reservados.
+    </footer>
+</html>

@@ -1,0 +1,164 @@
+{
+  "categorias": [
+    {
+      "nombre": "Grupos de alimentos",
+      "color": "#FF6B6B",
+      "preguntas": [
+        {"pregunta": "¿Qué alimentos pertenecen al grupo de los constructores?", "respuesta": "proteínas"},
+        {"pregunta": "¿Cuál es la función principal de los alimentos energéticos?", "respuesta": "dar energía"},
+        {"pregunta": "¿Los alimentos reguladores ayudan a qué función del cuerpo?", "respuesta": "regular el metabolismo"},
+        {"pregunta": "¿Qué grupo de alimentos incluye carnes, huevos y legumbres?", "respuesta": "constructores"},
+        {"pregunta": "¿Los cereales y tubérculos pertenecen a qué grupo?", "respuesta": "energéticos"},
+        {"pregunta": "¿Las frutas y verduras son alimentos de qué tipo?", "respuesta": "reguladores"},
+        {"pregunta": "¿Qué función cumplen los alimentos plásticos en el organismo?", "respuesta": "formar tejidos"},
+        {"pregunta": "¿El arroz y la pasta son alimentos de qué grupo?", "respuesta": "energéticos"},
+        {"pregunta": "¿Qué tipo de alimentos aportan vitaminas y minerales?", "respuesta": "reguladores"},
+        {"pregunta": "¿Los lácteos pertenecen principalmente a qué grupo?", "respuesta": "constructores"}
+      ]
+    },
+    {
+      "nombre": "Vitaminas y Minerales",
+      "color": "#4ECDC4",
+      "preguntas": [
+        {"pregunta": "¿Qué vitamina ayuda a prevenir resfríos?", "respuesta": "vitamina c"},
+        {"pregunta": "¿Qué mineral es esencial para los huesos?", "respuesta": "calcio"},
+        {"pregunta": "¿La falta de hierro puede causar qué enfermedad?", "respuesta": "anemia"},
+        {"pregunta": "¿Qué vitamina se produce con la exposición al sol?", "respuesta": "vitamina d"},
+        {"pregunta": "¿Qué mineral ayuda a transportar oxígeno en la sangre?", "respuesta": "hierro"},
+        {"pregunta": "¿Los cítricos son ricos en qué vitamina?", "respuesta": "vitamina c"},
+        {"pregunta": "¿Qué vitamina es importante para la vista?", "respuesta": "vitamina a"},
+        {"pregunta": "¿El potasio es importante para qué función?", "respuesta": "función muscular"},
+        {"pregunta": "¿Qué mineral se encuentra principalmente en los lácteos?", "respuesta": "calcio"},
+        {"pregunta": "¿La vitamina B12 es importante para qué sistema?", "respuesta": "sistema nervioso"}
+      ]
+    },
+    {
+      "nombre": "Hidratación",
+      "color": "#45B7D1",
+      "preguntas": [
+        {"pregunta": "¿Cuántos vasos de agua se recomienda beber al día?", "respuesta": "8"},
+        {"pregunta": "¿Qué porcentaje del cuerpo humano es agua?", "respuesta": "60"},
+        {"pregunta": "¿Cuál es la mejor bebida para hidratarse?", "respuesta": "agua"},
+        {"pregunta": "¿Los síntomas de deshidratación incluyen?", "respuesta": "sed y fatiga"},
+        {"pregunta": "¿Las frutas con más agua ayudan a qué?", "respuesta": "hidratación"},
+        {"pregunta": "¿Qué se debe evitar para mantener buena hidratación?", "respuesta": "alcohol"},
+        {"pregunta": "¿El color de la orina indica qué?", "respuesta": "nivel de hidratación"},
+        {"pregunta": "¿Los deportistas necesitan más agua por qué razón?", "respuesta": "sudoración"},
+        {"pregunta": "¿Las bebidas azucaradas son buenas para hidratarse?", "respuesta": "no"},
+        {"pregunta": "¿Cuándo debemos beber más agua?", "respuesta": "durante ejercicio"}
+      ]
+    },
+    {
+      "nombre": "Macronutrientes",
+      "color": "#96CEB4",
+      "preguntas": [
+        {"pregunta": "¿Qué macronutriente es la principal fuente de energía?", "respuesta": "carbohidratos"},
+        {"pregunta": "¿Las proteínas están formadas por qué?", "respuesta": "aminoácidos"},
+        {"pregunta": "¿Qué macronutriente aporta más calorías por gramo?", "respuesta": "grasas"},
+        {"pregunta": "¿Los carbohidratos aportan cuántas calorías por gramo?", "respuesta": "4"},
+        {"pregunta": "¿Qué macronutriente es esencial para formar músculos?", "respuesta": "proteínas"},
+        {"pregunta": "¿Las grasas saludables incluyen?", "respuesta": "omega 3"},
+        {"pregunta": "¿Qué porcentaje de calorías deben ser carbohidratos?", "respuesta": "50-60"},
+        {"pregunta": "¿Las grasas saturadas se deben consumir con qué frecuencia?", "respuesta": "con moderación"},
+        {"pregunta": "¿Qué macronutriente ayuda a la saciedad?", "respuesta": "proteínas"},
+        {"pregunta": "¿Los carbohidratos complejos son mejores que los simples por qué?", "respuesta": "liberan energía gradual"}
+      ]
+    },
+    {
+      "nombre": "Etiquetas de alimentos",
+      "color": "#FECA57",
+      "preguntas": [
+        {"pregunta": "¿Qué se debe mirar primero en una etiqueta nutricional?", "respuesta": "porción"},
+        {"pregunta": "¿Dónde se encuentra el azúcar oculto en los alimentos?", "respuesta": "lista de ingredientes"},
+        {"pregunta": "¿Los ingredientes se listan en qué orden?", "respuesta": "mayor a menor cantidad"},
+        {"pregunta": "¿Qué significa 'sin azúcar añadido'?", "respuesta": "no se agregó azúcar"},
+        {"pregunta": "¿El sodio alto en etiquetas puede causar qué?", "respuesta": "hipertensión"},
+        {"pregunta": "¿Qué porcentaje de valor diario de sodio es considerado alto?", "respuesta": "20"},
+        {"pregunta": "¿Las grasas trans aparecen como qué en las etiquetas?", "respuesta": "aceites hidrogenados"},
+        {"pregunta": "¿Cuántas calorías por porción es considerado bajo?", "respuesta": "40"},
+        {"pregunta": "¿Qué significa 'light' en un producto?", "respuesta": "25% menos calorías"},
+        {"pregunta": "¿Los productos 'naturales' siempre son saludables?", "respuesta": "no"}
+      ]
+    },
+    {
+      "nombre": "Porciones y frecuencia",
+      "color": "#FF9FF3",
+      "preguntas": [
+        {"pregunta": "¿Cuántas frutas se recomienda consumir por día?", "respuesta": "3-5"},
+        {"pregunta": "¿Una porción de carne equivale al tamaño de qué?", "respuesta": "palma de la mano"},
+        {"pregunta": "¿Cuántas porciones de verduras se recomiendan al día?", "respuesta": "5"},
+        {"pregunta": "¿El plato saludable debe tener qué proporción de vegetales?", "respuesta": "la mitad"},
+        {"pregunta": "¿Cuántas veces a la semana se recomienda pescado?", "respuesta": "2-3"},
+        {"pregunta": "¿Una porción de cereales equivale a cuánto?", "respuesta": "media taza"},
+        {"pregunta": "¿Los frutos secos se deben comer en qué cantidad?", "respuesta": "un puñado"},
+        {"pregunta": "¿Cuántas comidas principales se recomiendan al día?", "respuesta": "3"},
+        {"pregunta": "¿Los lácteos se deben consumir cuántas veces al día?", "respuesta": "2-3"},
+        {"pregunta": "¿Una porción de queso equivale al tamaño de qué?", "respuesta": "pulgar"}
+      ]
+    },
+    {
+      "nombre": "Mitos y verdades",
+      "color": "#F38BA8",
+      "preguntas": [
+        {"pregunta": "¿Comer después de las 8 engorda?", "respuesta": "no"},
+        {"pregunta": "¿El pan siempre engorda?", "respuesta": "no"},
+        {"pregunta": "¿Los suplementos son siempre necesarios?", "respuesta": "no"},
+        {"pregunta": "¿Saltarse comidas ayuda a bajar de peso?", "respuesta": "no"},
+        {"pregunta": "¿Los productos 'diet' no engordan?", "respuesta": "falso"},
+        {"pregunta": "¿Beber agua durante las comidas hace mal?", "respuesta": "no"},
+        {"pregunta": "¿Los carbohidratos de noche engordan más?", "respuesta": "no"},
+        {"pregunta": "¿El huevo aumenta el colesterol?", "respuesta": "no necesariamente"},
+        {"pregunta": "¿Hay alimentos que queman grasa?", "respuesta": "no"},
+        {"pregunta": "¿Los productos integrales siempre son más saludables?", "respuesta": "no siempre"}
+      ]
+    },
+    {
+      "nombre": "Nutrición y deporte",
+      "color": "#A8E6CF",
+      "preguntas": [
+        {"pregunta": "¿Qué comer después de entrenar para recuperar energía?", "respuesta": "carbohidratos y proteínas"},
+        {"pregunta": "¿Cuánto tiempo antes del ejercicio se debe comer?", "respuesta": "1-2 horas"},
+        {"pregunta": "¿Qué se debe beber durante ejercicio prolongado?", "respuesta": "bebidas deportivas"},
+        {"pregunta": "¿Las proteínas después del ejercicio ayudan a qué?", "respuesta": "recuperación muscular"},
+        {"pregunta": "¿Qué alimento es ideal antes del ejercicio?", "respuesta": "banana"},
+        {"pregunta": "¿Los deportistas necesitan más proteínas que las personas sedentarias?", "respuesta": "sí"},
+        {"pregunta": "¿Cuál es el mejor momento para hidratarse?", "respuesta": "antes durante y después"},
+        {"pregunta": "¿Los carbohidratos son importantes para qué tipo de ejercicio?", "respuesta": "resistencia"},
+        {"pregunta": "¿Qué se debe evitar comer antes del ejercicio?", "respuesta": "grasas y fibra"},
+        {"pregunta": "¿La cafeína puede mejorar el rendimiento deportivo?", "respuesta": "sí"}
+      ]
+    },
+    {
+      "nombre": "Enfermedades y alimentación",
+      "color": "#FFB3BA",
+      "preguntas": [
+        {"pregunta": "¿Qué carencia de hierro puede provocar?", "respuesta": "anemia"},
+        {"pregunta": "¿El exceso de azúcar puede causar qué enfermedad?", "respuesta": "diabetes"},
+        {"pregunta": "¿La falta de calcio puede provocar qué?", "respuesta": "osteoporosis"},
+        {"pregunta": "¿El exceso de sodio puede causar qué?", "respuesta": "hipertensión"},
+        {"pregunta": "¿La obesidad aumenta el riesgo de qué enfermedades?", "respuesta": "cardiovasculares"},
+        {"pregunta": "¿La falta de vitamina C causa qué enfermedad?", "respuesta": "escorbuto"},
+        {"pregunta": "¿El colesterol alto puede provocar qué?", "respuesta": "problemas cardíacos"},
+        {"pregunta": "¿Una dieta rica en fibra previene qué?", "respuesta": "cáncer de colon"},
+        {"pregunta": "¿La falta de vitamina D afecta qué?", "respuesta": "huesos"},
+        {"pregunta": "¿El consumo excesivo de alcohol puede dañar qué órgano?", "respuesta": "hígado"}
+      ]
+    },
+    {
+      "nombre": "Alimentos ultraprocesados",
+      "color": "#FFAAA5",
+      "preguntas": [
+        {"pregunta": "¿Por qué se deben evitar los ultraprocesados?", "respuesta": "alto contenido de aditivos"},
+        {"pregunta": "¿Los ultraprocesados suelen tener mucho de qué?", "respuesta": "sodio azúcar y grasas"},
+        {"pregunta": "¿Qué caracteriza a un alimento ultraprocesado?", "respuesta": "muchos ingredientes"},
+        {"pregunta": "¿Los embutidos son qué tipo de alimentos?", "respuesta": "ultraprocesados"},
+        {"pregunta": "¿Los aditivos en ultraprocesados pueden causar qué?", "respuesta": "alergias"},
+        {"pregunta": "¿Qué se debe priorizar en lugar de ultraprocesados?", "respuesta": "alimentos naturales"},
+        {"pregunta": "¿Los ultraprocesados tienen bajo contenido de qué?", "respuesta": "nutrientes"},
+        {"pregunta": "¿Las bebidas gaseosas son qué tipo de alimento?", "respuesta": "ultraprocesados"},
+        {"pregunta": "¿Los conservantes en exceso pueden afectar qué?", "respuesta": "salud intestinal"},
+        {"pregunta": "¿Cómo identificar un ultraprocesado?", "respuesta": "lista larga de ingredientes"}
+      ]
+    }
+  ]
+}
