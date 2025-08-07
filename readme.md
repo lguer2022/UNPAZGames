@@ -1,100 +1,108 @@
 # Centro de Juegos Educativos - UNPAZ
 
-## Overview
+## Visión General
 
-This is a web-based educational game center featuring three different games: Sports Trivia (Jeopardy-style), Nutritional Roulette, and Physical Education Quiz. It's designed for competitive learning between two teams/players across different educational topics. The application is built as a single-page application using vanilla HTML, CSS, and JavaScript, making it lightweight and easy to deploy.
+Este proyecto es un centro de juegos educativos web que incluye tres propuestas interactivas: **Trivia Deportiva**, **Ruleta Nutricional** y **Quiz de Educación Física**. Está diseñado para promover el aprendizaje significativo y competitivo entre dos equipos o jugadores. 
 
-## User Preferences
+La aplicación funciona completamente en el navegador como una *single-page application* (SPA) utilizando únicamente **HTML5**, **CSS3** y **JavaScript puro**, sin dependencias externas, lo que permite su uso incluso sin conexión.
 
-Preferred communication style: Simple, everyday language.
+---
 
-## System Architecture
+## Características Principales
 
-### Frontend Architecture
-- **Single Page Application (SPA)**: Built using vanilla HTML, CSS, and JavaScript without any frameworks
-- **Screen-based Navigation**: Uses CSS classes to show/hide different game screens (initial setup, game board, question screens)
-- **Component Structure**: Modular approach with distinct screens for team setup, game board, and question display
-- **Responsive Design**: CSS includes viewport meta tag and flexible layouts for different screen sizes
+- Aplicación web responsiva y liviana
+- Tres juegos educativos integrados:
+  - **Trivia Deportiva** (estilo Jeopardy)
+  - **Ruleta Nutricional** (ruleta giratoria con preguntas)
+  - **Quiz de Educación Física** (opciones múltiples)
+- Interfaz dinámica con cambio de pantallas mediante clases CSS
+- Juego por turnos con control de puntajes
+- Marcador visible en tiempo real
+- Sin necesidad de servidor backend
+- Funciona offline una vez cargada
 
-### Game Logic Architecture
-- **State Management**: Centralized game state object tracking teams, scores, current turn, and progress
-- **Question Database**: Structured object containing questions organized by categories and point values
-- **Turn-based System**: Implements alternating team turns with score tracking
-- **Multi-Game System**: Three different game types with unique mechanics and educational focuses
+---
 
-### Data Structure
-- **Questions Object**: Multiple JSON files containing different question structures for each game type
-- **Game State**: Multiple state objects for different games (gameState, rouletteGameState, quizGameState)
-- **Dynamic Content**: Team names, scores, and game-specific information dynamically updated in the DOM
+## Estructura del Proyecto
 
-### User Interface Design
-- **Multiple Game Interfaces**: 
-  - Jeopardy-style board for Sports Trivia
-  - Spinning roulette wheel for Nutritional Game
-  - Multiple choice interface for Physical Education Quiz
-- **Real-time Scoreboard**: Persistent score display with team names and current turn indicator
-- **Progressive Disclosure**: Questions revealed through different mechanics per game
-- **Visual Feedback**: CSS animations, transitions, and color-coded visual elements
+/index.html # Pantalla principal con todos los juegos
+/style.css # Estilos generales y específicos por juego
+/script.js # Lógica de juegos y manejo del estado
+/preguntas.json # Preguntas de la trivia deportiva
+/preguntas-nutricionales.json # Preguntas para la ruleta nutricional
+/preguntas-educacion-fisica.json # Preguntas del quiz de educación física
+/README.md # Documentación general del proyecto
 
-## External Dependencies
+yaml
+Copiar
+Editar
 
-### Core Technologies
-- **HTML5**: Semantic markup with modern web standards
-- **CSS3**: Advanced styling with gradients, animations, and flexbox layouts
-- **Vanilla JavaScript**: No external JavaScript libraries or frameworks
+---
 
-### Browser Requirements
-- **Modern Web Browser**: Requires support for ES6+ JavaScript features
-- **CSS3 Support**: Needs modern CSS features like flexbox and CSS animations
-- **Local Storage**: May utilize browser storage for game state persistence
+## Requisitos del Sistema
 
-### Assets and Resources
-- **No External APIs**: All questions and game data are stored in local JSON files
-- **Self-contained**: No external fonts, images, or CDN dependencies  
-- **Offline Capable**: Can run entirely offline once loaded
-- **Multiple Question Databases**: Separate JSON files for each game type
+- Navegador moderno (Chrome, Firefox, Edge, Safari)
+- Soporte para ES6+ y CSS3 (flexbox, animaciones, etc.)
+- No se requiere instalación ni conexión a internet permanente
 
-### Deployment Requirements
-- **Static Hosting**: Can be deployed on any static web server
-- **No Backend**: Purely client-side application with no server requirements
-- **Cross-platform**: Compatible with desktop and mobile browsers
+---
 
-## Game Types
+## Juegos Incluidos
 
-### 1. Trivia Deportiva (Sports Trivia)
-- **Format**: Jeopardy-style board with 4 categories and 5 point values
-- **Mechanics**: Turn-based selection, 20 questions total
-- **Categories**: Team Sports, Individual Sports, Olympics, Sports Equipment
-- **Scoring**: Point values from 200-1000 based on difficulty
+### 1. Trivia Deportiva
 
-### 2. Ruleta Nutricional (Nutritional Roulette)
-- **Format**: Spinning wheel with 10 nutritional categories
-- **Mechanics**: 6 rounds total, 3 questions per player
-- **Categories**: 10 nutritional topics with color-coded visual system
-- **Scoring**: 1 point per correct answer
+- Formato: tablero tipo Jeopardy
+- Categorías: Deportes en equipo, Deportes individuales, Juegos Olímpicos, Equipamiento
+- 4 categorías x 5 preguntas cada una (valores de 200 a 1000 pts)
+- Juego por turnos
+- Puntaje acumulativo
 
-### 3. Quiz de Educación Física (Physical Education Quiz)
-- **Format**: Multiple choice questions (A, B, C, D)
-- **Mechanics**: Individual gameplay, 6 questions total (3 per player)
-- **Categories**: Health & Physical Activity, Sports Rules, Sports History
-- **Scoring**: 1 point per correct answer
-- **Level**: University/Professional level questions
+### 2. Ruleta Nutricional
 
-## Recent Changes (August 2025)
+- Formato: ruleta giratoria con 10 categorías
+- 6 rondas totales (3 preguntas por jugador)
+- 1 punto por respuesta correcta
+- Categorías codificadas por color
 
-- Added game selection screen with three game options
-- Implemented Nutritional Roulette with spinning wheel mechanic
-- Created Physical Education Quiz with multiple choice format
-- Updated architecture to support multiple game types
-- Added category selection for Physical Education Quiz
-- Enhanced visual design with game-specific interfaces
+### 3. Quiz de Educación Física
 
-## File Structure
+- Formato: preguntas de opción múltiple (A, B, C, D)
+- Temáticas: salud, historia del deporte, reglas deportivas
+- 3 preguntas por jugador
+- Nivel: universitario/profesional
 
-- **index.html**: Main HTML with all game screens and modals
-- **style.css**: Complete styling including responsive design and animations
-- **script.js**: Game logic with state management for all three games
-- **preguntas.json**: Sports trivia questions (4 categories, 25 questions each)
-- **preguntas-nutricionales.json**: Nutritional questions (10 categories, 10 questions each)
-- **preguntas-educacion-fisica.json**: Physical education questions (3 categories, 15 questions each)
-- **replit.md**: Project documentation and architecture notes
+---
+
+## Tecnologías Utilizadas
+
+- **HTML5**: Estructura semántica
+- **CSS3**: Estilizado responsivo y animaciones
+- **JavaScript ES6**: Lógica del juego y manipulación del DOM
+- **JSON local**: Almacenamiento de preguntas por tipo de juego
+
+---
+
+## Implementación y Uso
+
+1. Descargar o clonar el repositorio
+2. Abrir `index.html` en un navegador moderno
+3. No requiere servidor ni conexión externa
+4. Puede utilizarse offline tras su primera carga
+
+---
+
+## Cambios Recientes (Agosto 2025)
+
+- Agregado selector de tipo de juego
+- Implementación de la Ruleta Nutricional
+- Creación del Quiz de Educación Física con sistema de respuestas múltiples
+- Mejora visual por juego
+- Separación modular del estado por tipo de juego
+
+---
+
+## Créditos
+
+**Desarrollado por:** Leandro Guerschberg  
+**Institución:** Universidad Nacional de José C. Paz (UNPAZ)  
+**Año:** 2025
